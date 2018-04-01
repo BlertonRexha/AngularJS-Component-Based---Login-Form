@@ -17,7 +17,7 @@
                                     <input type="text" class="username" placeholder="Username">
                                     <!--myForm.$error.email = {{!!myForm.$error.email}}-->
                                     <input type="password" class="password" placeholder="Password">
-                                    <button type="button" class="submit" onclick='login();'>Login</button>
+                                    <button type="button" class="submit">Login</button>
                                 </div>
                                 <div class="last_row">
                                     <p>Do you have account <a href="">Create Account</a></p>
@@ -37,8 +37,6 @@
             function mainController($log) {
                 var vm = this;
 
-                function login() {
-                    $log.debug('alsjdlaksjdlk');
-                }
+
             }
 })();
