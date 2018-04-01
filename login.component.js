@@ -5,7 +5,7 @@
         .component('loginForm',{
             template:`
                     <div class="parenti">
-                    <form action="" novalidate>
+                    <form novalidate>
                         <div class="container">
 
                                 <div class="row1">
@@ -15,8 +15,9 @@
 
                                 <div class="row2">
                                     <input type="text" class="username" placeholder="Username">
-                                    <input type="password" class="password" placeholder="password">
-                                    <button type="button" class="submit">Login</button>
+                                    <!--myForm.$error.email = {{!!myForm.$error.email}}-->
+                                    <input type="password" class="password" placeholder="Password">
+                                    <button type="button" class="submit" onclick='login();'>Login</button>
                                 </div>
                                 <div class="last_row">
                                     <p>Do you have account <a href="">Create Account</a></p>
@@ -34,5 +35,10 @@
             mainController.$inject = ['$log'];
 
             function mainController($log) {
-                var vm = this;}
+                var vm = this;
+
+                function login() {
+                    $log.debug('alsjdlaksjdlk');
+                }
+            }
 })();
